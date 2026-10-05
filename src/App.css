@@ -1,0 +1,157 @@
+.app-root {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+.app-header {
+  margin-bottom: 24px;
+}
+
+.app-header h1 {
+  margin: 0 0 16px;
+  color: #b91c1c;
+  font-size: 2.2rem;
+}
+
+.app-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.app-header button,
+.form button,
+.list-item button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.app-header button {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.app-header button.active {
+  background: #b91c1c;
+  color: white;
+}
+
+.app-header button:hover,
+.form button:hover,
+.list-item button:hover {
+  transform: translateY(-1px);
+}
+
+main {
+  min-height: 400px;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  padding: 24px;
+}
+
+.panel h2 {
+  margin-top: 0;
+  color: #b91c1c;
+}
+
+.form {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.form label {
+  display: grid;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form button {
+  background: #b91c1c;
+  color: white;
+  width: fit-content;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.list-item strong {
+  color: #111827;
+}
+
+.small {
+  background: #dc2626;
+  color: white;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+}
+
+.danger {
+  background: #7f1d1d;
+}
+
+.post-text {
+  margin: 8px 0 10px;
+  color: #374151;
+}
+
+.post-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.app-footer {
+  margin-top: 20px;
+  color: #4b5563;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .app-header h1 {
+    font-size: 1.7rem;
+  }
+}
